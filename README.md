@@ -104,7 +104,7 @@ as outlined in the
 [guide](https://github.com/jacopoantonello/dmlib/tree/master/doc).
 Alternatively, open an *Anaconda Prompt* and use the `-m dmlib.zpanel` flag to
 start this GUI. You can query the GUIs flags with `--help` as seen above.
-
+Example: python -m dmlib.zpanel --dm-driver bmc --dm-layout multidm140 --dm-name MultiUSBOL1
 ## References
 
 <a id="1">[1]</a> J. Antonello, J. Wang, C. He, M. Phillips, and M. Booth, "Interferometric calibration of a deformable mirror," [10.5281/zenodo.3714951](https://doi.org/10.5281/zenodo.3714951).
