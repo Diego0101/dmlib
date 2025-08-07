@@ -14,7 +14,7 @@ from dmlib.control import ZernikeControl
 """
 
 # set this flag to use the real hardware
-use_real_hardware = 0
+use_real_hardware = 1
 
 try:
     if use_real_hardware:
@@ -25,9 +25,15 @@ try:
         # get a list of connected devices
         # NB you need to install the correct DM profile files for this to work!
         devs = dm.get_devices()
+        DM1 = 'MultiUSBOL1'
 
+        try:
+            index = devs.index(DM1)
+            print(f"'{DM1}' is the {index} among the installed devices '{devs}'")
+        except ValueError:
+            print(f"'{DM1}' is not in the list.")
         # open first device
-        dm.open(devs[0])
+        dm.open(devs[index])
     else:
         # use a dummy DM object instead of real hardware
 
