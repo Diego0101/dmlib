@@ -4,5 +4,5 @@
 	branch = master
 [submodule "zernike"]
 	path = zernike
-	url = https://github.com/Diego0101jacopoantonello/zernike.git
+	url = https://github.com/jacopoantonello/zernike.git
 	branch = master
