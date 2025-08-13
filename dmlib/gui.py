@@ -329,7 +329,7 @@ class Control(QMainWindow):
         gl1.addWidget(flipy, 0, 1)
         brotate = QPushButton('rotate')
         gl1.addWidget(brotate, 1, 0)
-        bcmap = QPushButton('cmap')
+        bcmap = QPushButton('comap')
         gl1.addWidget(bcmap, 1, 1)
         g1.setLayout(gl1)
         central.addWidget(g1)
@@ -354,7 +354,7 @@ class Control(QMainWindow):
         gl2.addWidget(loadflat, 1, 1)
         i = 2
         j = 0
-        for name in ('centre', 'cross', 'x', 'rim', 'checker', 'arrows'):
+        for name in ('centre', 'cross', 'x', 'rim', 'checker', 'arrows', 'sphere'):
             b = QPushButton(name)
             gl2.addWidget(b, i, j)
             if j == 1:
@@ -2078,7 +2078,7 @@ class Worker:
 
         Ualign = []
         align_names = []
-        for name in ('centre', 'cross', 'x', 'rim', 'checker', 'arrows'):
+        for name in ('centre', 'cross', 'x', 'rim', 'checker', 'arrows', 'sphere'):
             try:
                 Ualign.append(dm.preset(name, pokemag).reshape(-1, 1))
                 align_names.append(name)

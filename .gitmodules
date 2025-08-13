@@ -1,8 +1,8 @@
 [submodule "devwraps"]
 	path = devwraps
-	url = https://github.com/jacopoantonello/devwraps.git
+	url = https://github.com/Diego0101/devwraps.git
 	branch = master
 [submodule "zernike"]
 	path = zernike
-	url = https://github.com/jacopoantonello/zernike.git
+	url = https://github.com/Diego0101/zernike.git
 	branch = master

@@ -1,7 +1,3 @@
-Activate-Anaconda
-if (-not $?) {
-	exit
-}
 pip uninstall -y devwraps
 if (-not $?) {
 	exit
@@ -25,6 +21,7 @@ if (-not $?) {
 	exit
 }
 pip install (get-item .\dist\*.whl)
+python devwraps\test.py 
 cd ..
 
 cd zernike
